@@ -1,10 +1,9 @@
-# BestSellingProductsCli
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/best_selling_products_cli`. To experiment with that code, run `bin/console` for an interactive prompt.
+Hello all! In this directory, you will find a command line interface application to view the Best Selling Products from Amazon.com.
 
-TODO: Delete this and the text above, and describe your gem
 
-## Installation
+
+ Installation
 
 Add this line to your application's Gemfile:
 
