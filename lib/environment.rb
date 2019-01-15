@@ -1,6 +1,7 @@
-require "best_selling_products_cli/version"
+#This is our environment file where we will require all of the classes we build inside of our best_selling_products_cli directory.
 
-module BestSellingProductsCli
-  class Error < StandardError; end
-  # Your code goes here...
-end
+
+
+
+require_relative "./best_selling_products_cli/version"
+require_relative "./best_selling_products_cli/cli"
