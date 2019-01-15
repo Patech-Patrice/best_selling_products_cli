@@ -1,5 +1,21 @@
-class CLI
-  def start
-    puts "Welcome to the Best Selling Products on Amazon!!!"
+class BestSellingProductsCLI::CLI
+
+  def call
+  list_deals
+  options
+  farewell
   end
-end  
+
+  def list_deals
+  end
+
+
+  def options
+  end
+
+  def farewell
+  end
+
+
+
+end
