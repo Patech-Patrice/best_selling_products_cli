@@ -1,21 +1,16 @@
 class BestSellingProductsCLI::CLI
 
   def call
-  list_deals
-  options
-  farewell
   end
 
-  def list_deals
+  def start
   end
 
-
-  def options
+  def print_best_seller
   end
 
   def farewell
   end
-
 
 
 end
