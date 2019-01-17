@@ -1,7 +1,7 @@
-class BestSellingProductsCLI::CLI
+class BestSellingProductsCli::CLI
 
   def call
-    BestSellingProducts::Scraper.new.make_best_sellers
+    BestSellingProductsCli::Scraper.new.make_best_sellers
     puts "Welcome to Best Selling Products on Amazon!"
     start
   end
@@ -19,7 +19,7 @@ class BestSellingProductsCLI::CLI
     puts "What best seller would you like to learn more about?"
     input = gets.strip
 
-    best_seller = BestSellingProductsCLI::Best_Seller.find(input.to_i)
+    best_seller = BestSellingProductsCli::Best_Seller.find(input.to_i)
 
     print_best_seller(best_seller)
 
@@ -48,15 +48,6 @@ end
 
   def goodbye
     puts "Would you like to try a different product number? (y/n)"
-
-    input = gets.strip.downcase
-
-    if input == 'y' || input == 'yes'
-      start
-    elsif input = 'n' || input == 'no'
-      puts "Thank you! Goodbye!"
-    else
-      puts "Invalid entry, please enter y or n..."
     end
 
 

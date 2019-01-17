@@ -1,4 +1,4 @@
-class BestSellingProductsCLI::Best_Seller
+class BestSellingProductsCli::Best_Seller
   attr_accessor :name, :price, :in_stock, :url
 
   def self.today
@@ -27,5 +27,5 @@ class BestSellingProductsCLI::Best_Seller
     best_seller
   end
 
-  
+
 end

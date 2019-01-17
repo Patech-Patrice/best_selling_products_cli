@@ -1,4 +1,4 @@
-class BestSellingProducts::Scraper
+class BestSellingProductsCli::Scraper
 #first level to scrape the top 50 best selling products
 
 
