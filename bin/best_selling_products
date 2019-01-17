@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
+require 'bundler/setup'
 require_relative '../lib/environment'
-require_relative "bundler/setup"
 
 BestSellingProductsCli::CLI.new.start
