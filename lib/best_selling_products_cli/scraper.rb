@@ -3,11 +3,9 @@ class BestSellingProductsCli::Scraper
 
 
 
-def open_page
-    Nokogiri::HTML(open("https://www.amazon.com/Best-Sellers/zgbs")) #open page
-  end
 #first level to scrape the top 50 best selling products
-  def scrape_best_sellers
+  def self.scrape_best_sellers
+    Nokogiri::HTML(open("https://www.amazon.com/Best-Sellers/zgbs")) #open page
 end
 
 #second level scrape
