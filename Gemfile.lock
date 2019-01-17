@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
 
-PLATFORMS
+PLATFORM
   ruby
 
 DEPENDENCIES
