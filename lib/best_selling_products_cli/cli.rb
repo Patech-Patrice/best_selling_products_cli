@@ -46,6 +46,18 @@ end
   def print_best_sellers
   end
 
+  def goodbye
+    puts "Would you like to try a different product number? (y/n)"
+
+    input = gets.strip.downcase
+
+    if input == 'y' || input == 'yes'
+      start
+    elsif input = 'n' || input == 'no'
+      puts "Thank you! Goodbye!"
+    else
+      puts "Invalid entry, please enter y or n..."
+    end
 
 
 
