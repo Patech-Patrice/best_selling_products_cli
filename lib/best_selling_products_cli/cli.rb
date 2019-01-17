@@ -1,7 +1,5 @@
 class BestSellingProductsCLI::CLI
 
-
-
   def call
     BestSellingProducts::Scraper.new.make_best_sellers
     puts "Welcome to Best Selling Products on Amazon!"
@@ -10,7 +8,9 @@ class BestSellingProductsCLI::CLI
 
   def start
     #show a list of the top 50 best selling proudcts
-    puts "Here is a list of the Top 50 best selling products:"
+    #scrape all of the products---call to the scraper class
+    #option to ask for input from user
+    #call another method based on user input
     puts "What number best seller would you like to view? (enter 1 - 100)"
     input = gets.strip.to_i
 
@@ -33,19 +33,18 @@ class BestSellingProductsCLI::CLI
       exit
   end
 end
-    #scrape all of the products---call to the scraper class
-    #option to ask for input from user
-    #call another method based on user input  
-  end
 
-  def list_products
+
+
+  def list_best_sellers
     #start our product list index at 1
     BestSellingProductsCLI::Best_Seller.all.each.with_index(1) do | best_seller, index |
       puts "#{index}. #{best_seller.name}"
   end
 end
 
-
+  def print_best_sellers
+  end
 
 
 
