@@ -6,4 +6,4 @@ require "pry"
 require_relative "./best_selling_products_cli/version"
 require_relative "./best_selling_products_cli/cli"
 require_relative "./best_selling_products_cli/scraper "
-require_relative "./best_selling_products_cli/best_seller
+require_relative "./best_selling_products_cli/best_seller"
